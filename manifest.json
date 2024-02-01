@@ -1,0 +1,55 @@
+{
+  "required_api_version": "2",
+  "name": "FS Bookmarks",
+  "description": "Quickly access bookmarked folders or files",
+  "developer_name": "teofiloxyz",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.05
+  },
+  "preferences": [
+    {
+        "id": "open_fs_bookmark",
+        "type": "keyword",
+        "name": "Open bookmark",
+        "description": "Fuzzy search and open a bookmark from the list of filesystem bookmarks",
+        "default_value": "b"
+	}, {
+		"id": "enter_action",
+		"type": "text",
+		"name": "Bash command on Enter action",
+		"description": "Execute bash cmd with the selected %fs_bookmark%",
+		"default_value": "alacritty -e ranger %fs_bookmark%"
+	}, {
+		"id": "alt_enter_action",
+		"type": "text",
+		"name": "Bash command on Alt+Enter action",
+		"description": "Execute bash cmd with the selected %fs_bookmark%",
+		"default_value": "nautilus %fs_bookmark%"
+	}, {
+        "id": "add_fs_bookmark",
+        "type": "keyword",
+        "name": "Add new bookmark",
+        "description": "Add a new bookmark to the list of filesystem bookmarks",
+        "default_value": "ba"
+	}, {
+        "id": "remove_fs_bookmark",
+        "type": "keyword",
+        "name": "Remove bookmark",
+        "description": "Fuzzy search and remove a bookmark from the list of filesystem bookmarks",
+        "default_value": "br"
+	}, {
+        "id": "fs_bookmarks_path",
+        "type": "text",
+        "name": "Bookmarks file path",
+        "description": "The path of the file that contains the filesystem bookmarks",
+        "default_value": "put the path here"
+	}, {
+        "id": "max_search_results",
+        "type": "text",
+        "name": "Maximum search results",
+        "description": "Maximum amount of results that appear when fuzzy searching for filesystem bookmarks",
+        "default_value": 7
+    }
+  ]
+}
