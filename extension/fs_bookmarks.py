@@ -29,7 +29,7 @@ class FSBookmarks(Extension):
             return self._show_message("Add a new fs bookmark to the list...")
         elif not os.path.exists(query):
             return self._show_message("Path not recognized, cannot add this...")
-        elif query in FSBFile(self.preferences).read_fs_bookmarks():
+        elif query in FSBFile().read_fs_bookmarks():
             return self._show_message("This path is already bookmarked...")
         return self._render_item_to_add(query)
 
@@ -120,7 +120,7 @@ class ItemEnterEventListener(EventListener):
     ) -> RenderResultListAction:
         option, fs_bookmark = event.get_data()
         if option == CustomActionOption.ADD_FSB:
-            FSBFile(extension.preferences).add_fs_bookmark(fs_bookmark)
+            FSBFile().add_fs_bookmark(fs_bookmark)
         elif option == CustomActionOption.REM_FSB:
-            FSBFile(extension.preferences).remove_fs_bookmark(fs_bookmark)
+            FSBFile().remove_fs_bookmark(fs_bookmark)
         return extension.hide()

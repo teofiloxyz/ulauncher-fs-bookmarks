@@ -39,12 +39,6 @@
         "description": "Fuzzy search and remove a bookmark from the list of filesystem bookmarks",
         "default_value": "br"
 	}, {
-        "id": "fs_bookmarks_path",
-        "type": "text",
-        "name": "Bookmarks file path",
-        "description": "The path of the file that contains the filesystem bookmarks",
-        "default_value": "put the path here"
-	}, {
         "id": "max_search_results",
         "type": "text",
         "name": "Maximum search results",

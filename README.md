@@ -8,7 +8,7 @@ Ulauncher FS Bookmarks is an efficient tool designed to enhance your productivit
 
 - **Bookmark Management:** Easily bookmark or remove bookmarks for files and folders directly from Ulauncher.
 - **Quick Access:** Open your bookmarked locations with simple keywords, making file access swift and hassle-free.
-- **Customizable:** Configure keywords, actions (enter and alt+enter), and the number of search results displayed. Additionally, specify the path for the bookmarks file to tailor the extension to your needs.
+- **Customizable:** Configure keywords, actions (`Enter` and `Alt+Enter`), and the number of search results displayed.
 
 ## Requirements
 
@@ -32,9 +32,8 @@ Combine these functionalities for a seamless bookmarking experience, integrating
 
 Customize your experience with adjustable settings:
 
-- Add a file path for storing bookmarks.
 - Keywords for bookmarking, removing, and accessing bookmarks.
-- Action configurations for both enter and alt+enter when accessing a bookmark.
+- Action configurations for both `Enter` and `Alt+Enter` when accessing a bookmark.
 - The number of search results shown.
 
 ## License
