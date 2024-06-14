@@ -4,6 +4,11 @@
 **Ulauncher FS Bookmarks** is an extension for [Ulauncher](https://ulauncher.io), designed to enhance productivity by allowing to quickly access bookmarked folders or files.
 
 
+## Demonstration
+![Demo](/images/demo.gif)
+*Animated GIF showing a demo of the extension.*
+
+
 ## Installation
 1. Open Ulauncher preferences.
 2. Go to the `Extensions` tab.
